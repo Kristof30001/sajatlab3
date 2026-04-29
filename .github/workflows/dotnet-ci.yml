@@ -39,7 +39,7 @@ jobs:
             /o:"kristof30001" \
             /d:sonar.token="${{ secrets.SONAR_TOKEN }}" \
             /d:sonar.host.url="https://sonarcloud.io" \
-            /d:sonar.exclusions="**/bin/**,**/obj/**,**/node_modules/**,**/coverage/**,.git/**" \
+            /d:sonar.exclusions="**/bin/**,**/obj/**,**/node_modules/**,**/coverage/**,**/coveragereport/**,**/code-coverage-report*/**,.git/**" \
             /d:sonar.cs.opencover.reportsPaths="coveragereport/OpenCover.xml"
 
       - name: Build
