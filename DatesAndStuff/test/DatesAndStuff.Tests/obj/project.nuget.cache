@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "dgSpecHash": "uZmQxt3g+m0=",
+  "success": true,
+  "projectFilePath": "/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/test/DatesAndStuff.Tests/DatesAndStuff.Tests.csproj",
+  "expectedPackageFiles": [
+    "/home/kristof/.nuget/packages/autofixture/4.18.1/autofixture.4.18.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/autofixture.automoq/4.18.1/autofixture.automoq.4.18.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/autofixture.nunit3/4.18.1/autofixture.nunit3.4.18.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/coverlet.collector/8.0.0/coverlet.collector.8.0.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/fare/2.1.1/fare.2.1.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/fluentassertions/8.8.0/fluentassertions.8.8.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.applicationinsights/2.23.0/microsoft.applicationinsights.2.23.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.codecoverage/18.3.0/microsoft.codecoverage.18.3.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.net.test.sdk/18.3.0/microsoft.net.test.sdk.18.3.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testing.extensions.telemetry/2.0.2/microsoft.testing.extensions.telemetry.2.0.2.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testing.extensions.trxreport.abstractions/2.0.2/microsoft.testing.extensions.trxreport.abstractions.2.0.2.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testing.extensions.vstestbridge/2.0.2/microsoft.testing.extensions.vstestbridge.2.0.2.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testing.platform/2.0.2/microsoft.testing.platform.2.0.2.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testing.platform.msbuild/2.0.2/microsoft.testing.platform.msbuild.2.0.2.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testplatform.adapterutilities/18.0.1/microsoft.testplatform.adapterutilities.18.0.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testplatform.objectmodel/18.3.0/microsoft.testplatform.objectmodel.18.3.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/microsoft.testplatform.testhost/18.3.0/microsoft.testplatform.testhost.18.3.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/moq/4.20.72/moq.4.20.72.nupkg.sha512",
+    "/home/kristof/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/kristof/.nuget/packages/nunit/4.5.1/nunit.4.5.1.nupkg.sha512",
+    "/home/kristof/.nuget/packages/nunit.analyzers/4.12.0/nunit.analyzers.4.12.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/nunit3testadapter/6.1.0/nunit3testadapter.6.1.0.nupkg.sha512",
+    "/home/kristof/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "message": "Detected package version outside of dependency constraint: AutoFixture.NUnit3 4.18.1 requires NUnit (>= 3.7.0 && < 4.0.0) but version NUnit 4.5.1 was resolved.",
+      "projectPath": "/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/test/DatesAndStuff.Tests/DatesAndStuff.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/test/DatesAndStuff.Tests/DatesAndStuff.Tests.csproj",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

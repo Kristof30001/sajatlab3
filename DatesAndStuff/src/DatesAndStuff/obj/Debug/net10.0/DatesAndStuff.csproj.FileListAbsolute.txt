@@ -1,0 +1,12 @@
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/bin/Debug/net10.0/DatesAndStuff.deps.json
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/bin/Debug/net10.0/DatesAndStuff.dll
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/bin/Debug/net10.0/DatesAndStuff.pdb
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.GeneratedMSBuildEditorConfig.editorconfig
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.AssemblyInfoInputs.cache
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.AssemblyInfo.cs
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.csproj.CoreCompileInputs.cache
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.sourcelink.json
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.dll
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/refint/DatesAndStuff.dll
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/DatesAndStuff.pdb
+/home/kristof/Dokumentumok/6.felev/verVal/ubb-verval-3-labor-Kristof30001/DatesAndStuff/src/DatesAndStuff/obj/Debug/net10.0/ref/DatesAndStuff.dll
