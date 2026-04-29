@@ -28,6 +28,7 @@ jobs:
         run: |
           dotnet tool install --global dotnet-sonarscanner
           dotnet tool install --global dotnet-coverage
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Start SonarCloud analysis
         env:
@@ -40,7 +41,7 @@ jobs:
             /d:sonar.token="${{ secrets.SONAR_TOKEN }}" \
             /d:sonar.host.url="https://sonarcloud.io" \
             /d:sonar.exclusions="**/bin/**,**/obj/**,**/node_modules/**,**/coverage/**,**/coveragereport/**,**/code-coverage-report*/**,.git/**" \
-            /d:sonar.cs.opencover.reportsPaths="coveragereport/OpenCover.xml"
+            /d:sonar.cs.opencover.reportsPaths="./coveragereport/OpenCover.xml"
 
       - name: Build
         run: dotnet build VerVal.sln --no-restore --configuration Debug
@@ -53,6 +54,9 @@ jobs:
 
       - name: Generate HTML Report
         run: reportgenerator -reports:./coverage/**/*.cobertura.xml -targetdir:./coveragereport -reporttypes:"Html;OpenCover"
+
+      - name: Debug coverage files
+        run: find ./coveragereport -name "*.xml" | sort
 
       - name: End SonarCloud analysis
         env:
