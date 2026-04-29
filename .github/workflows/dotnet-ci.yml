@@ -52,7 +52,7 @@ jobs:
         run: dotnet tool install -g dotnet-reportgenerator-globaltool
 
       - name: Generate HTML Report
-        run: reportgenerator -reports:./coverage/**/*.cobertura.xml -targetdir:./coveragereport -reporttypes:Html;OpenCover
+        run: reportgenerator -reports:./coverage/**/*.cobertura.xml -targetdir:./coveragereport -reporttypes:"Html;OpenCover"
 
       - name: End SonarCloud analysis
         env:
