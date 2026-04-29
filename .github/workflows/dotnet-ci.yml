@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
@@ -21,6 +23,25 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore VerVal.sln
+
+      - name: Install SonarCloud Scanner
+        run: |
+          dotnet tool install --global dotnet-sonarscanner
+          dotnet tool install --global dotnet-coverage
+
+      - name: Start SonarCloud analysis
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          dotnet-sonarscanner begin \
+            /k:"Kristof30001_sajatlab3" \
+            /o:"kristof30001" \
+            /d:sonar.token="${{ secrets.SONAR_TOKEN }}" \
+            /d:sonar.host.url="https://sonarcloud.io" \
+            /d:sonar.sources="." \
+            /d:sonar.exclusions="**/bin/**,**/obj/**,**/node_modules/**,**/coverage/**,.git/**" \
+            /d:sonar.cs.opencover.reportsPaths="coverage/**/coverage.opencover.xml"
 
       - name: Build
         run: dotnet build VerVal.sln --no-restore --configuration Debug
@@ -33,6 +54,12 @@ jobs:
 
       - name: Generate HTML Report
         run: reportgenerator -reports:./coverage/**/*.cobertura.xml -targetdir:./coveragereport -reporttypes:Html
+
+      - name: End SonarCloud analysis
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
 
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4
